@@ -1,3 +1,5 @@
+[![Run on Repl.it](https://repl.it/badge/github/NicholasDawson/Integral-Calculator)](https://repl.it/github/NicholasDawson/Integral-Calculator)
+
 # Integral-Calculator
 A program to calculate the left, right, and midpoint Riemann sums and also trapezoidal sums. 
 
