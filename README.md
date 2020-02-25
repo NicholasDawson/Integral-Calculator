@@ -1,38 +1,61 @@
 [![Run on Repl.it](https://repl.it/badge/github/NicholasDawson/Integral-Calculator)](https://repl.it/github/NicholasDawson/Integral-Calculator)
 
 # Integral-Calculator
-A program to calculate the left, right, and midpoint Riemann sums and also trapezoidal sums. 
+A program to estimate the left, right, and midpoint Riemann sums and also trapezoidal sums. 
+It can also calculate the exact area under the curve of a function.
 
-### Parameters:
+## Parameters:
+#### Estimate Mode:
 - Lower Limit
 - Upper Limit
 - Function (in terms of x)
 - Amount of Sections (rectangles or trapezoids)
+#### Calculate Mode:
+- Lower Limit
+- Upper Limit
+- Function (in terms of x)
 
-### Output:
+## Output:
+#### Estimate Mode: 
 The program will output all 4 sums listed above along with the equation used to calculate them.
 Math functions are imported so you can use sin, cos, e, pi, etc. in your parameters.
+#### Calculate Mode:
+The program will output the area under the curve rounded to 3 decimal places.
 
-### Example:
+## Example Calculate Mode:
 ```
 INTEGRAL CALCULATOR
 BY: NICK DAWSON
---------------------
-To use exponents use ** instead of ^
-Example: (5 * x + 3)**2
 ====================
-Enter the lower limit: 1
+Select Mode: "E" (Estimate) | "C" (Calculate): C
+====================
+Enter the lower limit: 0
 Enter the upper limit: 12
-Enter the function: sin(x) * 5
-Enter the amount of partitions: 6
+Enter the function: 5^2 + 5 * x
 --------------------
-Left Sum is: 5.249
-1.833 * (4.207 + 1.517 + -4.995 + 1.076 + 4.436 + -3.378)
-Right Sum is: -7.383
-1.833 * (1.517 + -4.995 + 1.076 + 4.436 + -3.378 + -2.683)
-Midpoint Sum is: -1.753
-1.833 * (4.704 + -2.858 + -3.221 + 4.529 + 0.869 + -4.981)
-Trapezoidal Sum is: -1.067
-1/2 * 1.833 * (4.207 + 1.517 + -4.995 + 1.076 + 4.436 + -3.378 + -2.683 + 1.517 + -4.995 + 1.076 + 4.436 + -3.378)
+Area is: 660.0
+====================
+```
+
+## Example Estimate Mode:
+```
+INTEGRAL CALCULATOR
+BY: NICK DAWSON
+====================
+Select Mode: "E" (Estimate) | "C" (Calculate): E
+====================
+Enter the lower limit: 0
+Enter the upper limit: 12
+Enter the function: x^2
+Enter the amount of partitions: 5
+--------------------
+Left Sum is: 414.72
+2.4 * (0.0 + 5.76 + 23.04 + 51.84 + 92.16)
+Right Sum is: 760.32
+2.4 * (5.76 + 23.04 + 51.84 + 92.16 + 144.0)
+Midpoint Sum is: 570.24
+2.4 * (1.44 + 12.96 + 36.0 + 70.56 + 116.64)
+Trapezoidal Sum is: 587.52
+1/2 * 2.4 * (0.0 + 5.76 + 23.04 + 51.84 + 92.16 + 144.0 + 5.76 + 23.04 + 51.84 + 92.16)
 ====================
 ```
